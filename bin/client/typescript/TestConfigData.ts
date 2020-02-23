@@ -6,8 +6,8 @@
 ////////////////////////////////////////////////////////////////
 
 import { BaseJsonConfigData } from "./Basic/BaseJsonConfigData";
-import { Num3 } from "./Basic/Num3";
 import { Num2 } from "./Basic/Num2";
+import { Num3 } from "./Basic/Num3";
 
 export class TestConfigData extends BaseJsonConfigData 
 { 

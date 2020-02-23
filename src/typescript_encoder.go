@@ -10,7 +10,7 @@ func encodeToTypeScriptClass(pfData *PlatformData) {
 	for _, sheetData := range pfData.Sheets {
 		if len(sheetData.Values) > 0 {
 			clsName := formatCamelCaseName(sheetData.Name) + "ConfigData"
-			filePath := formatPlatformScriptFilePath(pfData.Name, pfData.Language, clsName, pfData.OutputFolder, pfData.OutputExt, pfData.OutputExt)
+			filePath := formatPlatformScriptFilePath(pfData.Name, pfData.Language, clsName, pfData.OutputFolder, pfData.OutputExt, pfData.ClsFolder)
 			err := toolky.RemoveFile(filePath)
 			if err != nil {
 				toolky.PrintError("remove file path " + filePath + " with error " + err.Error())
