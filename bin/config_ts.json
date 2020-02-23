@@ -1,0 +1,43 @@
+{
+	"platforms": [
+		{
+			"name": "client",
+			"ext": "C",
+			"output": "binary",
+			"outputfolder": true,
+			"allinone": false,
+			"createcls": true,
+			"language": "typescript",
+			"libcls": "BaseConfigData",
+			"libpath": "../Basic",
+			"datastructs": {
+				"int2": {
+					"libcls": "Number2",
+					"libpath": "../Basic/Number2"
+				},
+				"int3": {
+					"libcls": "Number3",
+					"libpath": "../Basic/Number3"
+				},
+				"int4": {
+					"libcls": "Number4",
+					"libpath": "../Basic/Number4"
+				},
+				"int5": {
+					"libcls": "Number5",
+					"libpath": "../Basic/Number5"
+				}
+			}
+		},
+		{
+			"name": "server",
+			"ext": "S",
+			"output": "xml",
+			"outputfolder": false,
+			"allinone": true,
+			"createcls": false,
+			"language": "",
+			"libpath": ""
+		}
+	]
+}

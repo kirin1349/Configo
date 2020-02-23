@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "int_tri": "1|2|3",
+        "int_two": "1|2",
+        "int_two_list": "1|2,2|3,3|4",
+        "val_int": "1",
+        "val_int_list": "1,2,3,4,5",
+        "val_str": "Test"
+    },
+    {
+        "id": "2",
+        "int_tri": "2|3|4",
+        "int_two": "2|3",
+        "int_two_list": "2|3",
+        "val_int": "2",
+        "val_int_list": "1,2,3",
+        "val_str": "测试"
+    }
+]

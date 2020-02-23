@@ -1,0 +1,34 @@
+{
+	"platforms": [
+		{
+			"name": "client",
+			"ext": "C",
+			"output": "json",
+			"outputfolder": true,
+			"allinone": false,
+			"createcls": true,
+			"clsfolder": "",
+			"language": "typescript",
+			"libcls": "BaseJsonConfigData",
+			"libpath": "./Basic",
+			"datastructs": {
+				"int2": {
+					"libcls": "Num2",
+					"libpath": "./Basic"
+				},
+				"int3": {
+					"libcls": "Num3",
+					"libpath": "./Basic"
+				},
+				"int4": {
+					"libcls": "Num4",
+					"libpath": "./Basic"
+				},
+				"int5": {
+					"libcls": "Num5",
+					"libpath": "./Basic"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,44 @@
+{
+	"platforms": [
+		{
+			"name": "client",
+			"ext": "C",
+			"output": "binary",
+			"outputfolder": true,
+			"allinone": false,
+			"createcls": true,
+			"clsfolder": "",
+			"language": "csharp",
+			"libcls": "BaseBinaryConfigData",
+			"libpath": "",
+			"datastructs": {
+				"int2": {
+					"libcls": "Int2",
+					"libpath": ""
+				},
+				"int3": {
+					"libcls": "Int3",
+					"libpath": ""
+				},
+				"int4": {
+					"libcls": "Int4",
+					"libpath": ""
+				},
+				"int5": {
+					"libcls": "Int5",
+					"libpath": ""
+				}
+			}
+		},
+		{
+			"name": "server",
+			"ext": "S",
+			"output": "xml",
+			"outputfolder": false,
+			"allinone": true,
+			"createcls": false,
+			"language": "",
+			"libpath": ""
+		}
+	]
+}
