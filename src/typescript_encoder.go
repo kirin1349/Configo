@@ -56,8 +56,14 @@ func encodeToTypeScriptClass(pfData *PlatformData) {
 				if structConfig == nil {
 					continue
 				}
+				index = strings.Index(structConfig.LibCls, ".")
+				if index > 0 {
+					continue
+				}
 				index = strings.Index(structConfig.LibPath, ".")
-				if index <= 0 {
+				if structConfig.LibPath == "" {
+					importContent += "import { " + structConfig.LibCls + " } from \"" + "./" + structConfig.LibCls + "\";\n"
+				} else {
 					importContent += "import { " + structConfig.LibCls + " } from \"" + structConfig.LibPath + "/" + structConfig.LibCls + "\";\n"
 				}
 			}
